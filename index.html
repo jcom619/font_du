@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="box1">Box 1</div>
+    <div class="box2">Box 2</div>
+    <div class="box3">Box 3</div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<script>
+const boxes = document.querySelectorAll('.box1, .box2, .box3');
+
+boxes.forEach((box, index) => {
+  box.setAttribute('id', `box-${index}`);
+});
+</script>
